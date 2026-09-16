@@ -1,0 +1,54 @@
+/* container centers the layout and sets a fixed width */
+#container {
+  width: 850px;
+  margin: 20px auto;
+  border: 1px solid #333333;
+  background-color: #ffffff;
+}
+
+/* header at the top of the container */
+#header {
+  background-color: #2b5b84;
+  color: #ffffff;
+  padding: 20px;
+  text-align: center;
+}
+
+/* float menu to the left */
+#menu {
+  float: left;
+  width: 180px;
+  padding: 15px;
+  background-color: #e9ecef;
+  border-right: 1px solid #cccccc;
+}
+
+/* menu tags and navigation links */
+#menu a {
+  display: inline-block;
+  margin-bottom: 8px;
+  color: #0056b3;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+#menu a:hover {
+  text-decoration: underline;
+}
+
+/* float main content to the left */
+#main {
+  float: left;
+  width: 590px;
+  padding: 15px 20px;
+}
+
+/* clear both floats so the footer starts on a new line below */
+#footer {
+  clear: both;
+  background-color: #333333;
+  color: #ffffff;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.9em;
+}
