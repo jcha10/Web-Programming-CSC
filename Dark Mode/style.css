@@ -1,0 +1,57 @@
+/* 
+   Default light theme variables inside the root class
+   These act as the base colors for the application
+*/
+:root {
+  --body-bg: #f5f5f5;
+  --card-bg: #e0e0e0;
+  --text-color: #252525;
+}
+
+/* 
+   Alternate theme: Pastel Purple 
+   When this class is added, it overrides the :root variables.
+*/
+.alternate_theme {
+  --body-bg: #e6e6fa; 
+  --card-bg: #d8bfd8; 
+  --text-color: #4b0082;
+}
+
+
+body {
+  /* Using the var() function to call CSS variables */
+  background: var(--body-bg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: -apple-system, 'Inter', sans-serif;
+}
+
+/* Styling for the content card */
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #bdbdbd;
+}
+
+/* Styling for the text inside the card */
+.card h2 {
+  color: var(--text-color);
+}
+
+/* Styling for the theme toggle button */
+#theme_toggler {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  background: #0096c3;
+  padding: 20px;
+  border-radius: 30px;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+}
